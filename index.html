@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E5 - Proyecto Grupal</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/mediaQuerys.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar_container">
+            <img class="logo" src="./assets/img/nucbazappiicon.png" alt="">
+
+            <nav class="navbar_menu">
+                <span class="btn_home"><img src="./assets/img/Home.png" alt="Inicio">Home</span>
+                <div class="cart_container">
+                    <img class="img_carrito" src="./assets/img/Fill 7.png" alt="carrito icono">
+                    <div class="counter_cart">0</div>
+                </div>
+                <div class="user">
+                    <img src="./assets/img/Fill 4.png" alt="">
+                    <img src="./assets/img/Fill 1.png" alt="">
+                </div>
+                <!--Carrito menu abierto hay que sacar por JS la clase open_cart para ocultar y abrir el carrito-->
+                <div class="cart hidden">
+                    <div class="close_cart">
+                        <button class="btn btn_close">X</button>
+                    </div>
+                    <h2 class="title_cart">Tus Productos</h2>
+
+                    <div class="cart-container" id="sell_cart"></div>
+
+                    <div class="sub_cart_container">
+                        <div class="cart_subtotal">
+                            <p class="text_sub_cart">Subtotal:</p>
+                            <div class="sub_price">
+                                <span class="text_sub_cart">$</span>
+                                <span class="text_sub_cart" id="sub_cart">$0</span>
+                            </div>
+                        </div>
+                        <div class="cart_subtotal">
+                            <p class="text_sub_cart">Envio</p>
+                            <span class="text_sub_cart">Gratis</span>
+                        </div>
+                    </div>
+
+                    <span class="divider"></span>
+
+                    <div class="cart_total">
+                        <p class="title_cart">Total:</p>
+                        <div class="finish_price">
+                            <span class="total_cart">$</span>
+                            <span class="total_cart" id="precio_total">$0</span>
+                        </div>
+                    </div>
+                    <div class="btn_container_cart">
+                        <button class="btn btn_buy">Comprar</button>
+                        <span>Ver más Productos</span>
+                    </div>
+                </div>
+
+                <div class="overlay"></div>
+                <!---------->
+
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section hero">
+            <div class="hero_slogan">
+                <div class="text_slogan">
+                    <h1>Si tenes Zappi,</h1>
+                    <h2>tenes Nucba.</h2>
+                    <span class="text_sub_slogan">Busca lo que quieras y nucba te quedes sin comida</span>
+                </div>
+                <div class="hero_link">
+                    <a href="" class="btn btn_header">VER MÁS</a>
+                </div>
+            </div>
+            <div class="hero_right hero_animation">
+                <img class="hero_img_1" src="./assets/img/pizza_header.png" alt="imagen pizza pepperoni">
+                <img class="hero_img_2" src="./assets/img/pizza_header1.png" alt="imagen pizza">
+            </div>
+        </section>
+
+        <section class="section recomendation">
+            <h3 class="title_section_h3">Hoy te recomendamos</h3>
+            <div id="container_recomendation" class="sub_container">
+                <!--Resultados de recomendaciones-->
+            </div>
+
+        </section>
+        <section class="section categories">
+            <h3 class="title_categories">Categorias</h3>
+            <div class="container_categories">
+                <!--Resultados de Categorias-->
+            </div>
+        </section>
+
+        <section class="section most_popular">
+            <h3 class="title_section_h3" id="title_most">Los más populares</h3>
+            <div id="container_most_popular" class="sub_container">
+                <!--Template card populares-->
+
+                <div class="card card_most_popular" id="card-popular">
+
+                </div>
+
+
+                <!--Template card populares-->
+
+            </div>
+        </section>
+
+        <footer class="section footer">
+            <div class="footer_links">
+                <span>Términos de Uso</span>
+                <span>Trabajá con Nosotros</span>
+                <span>Soporte</span>
+            </div>
+            <div class="footer_copyright">
+                <p>Hecho con <i class="hearth">💗 </i> en <strong class="strong_copy">NUCBAZAPPI</strong></p>
+            </div>
+
+        </footer>
+
+    </main>
+    <script src="./assets/storage.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>

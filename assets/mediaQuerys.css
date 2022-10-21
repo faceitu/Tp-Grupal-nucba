@@ -1,0 +1,74 @@
+/*TABLET*/
+
+@media (max-width: 1023px) {
+    .hero {
+        margin-top: 100px;
+    }
+    .cart {
+        width: 100vw;
+        position: absolute;
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+}
+
+.hero {
+    justify-content: center;
+}
+
+.hero_right {
+    display: none;
+}
+
+.hero_slogan {
+    text-align: center;
+}
+
+.title_section_h3 .title_categories {
+    text-align: center;
+}
+
+.title_categories {
+    text-align: center;
+}
+
+.title_section_h3 {
+    text-align: center;
+}
+
+.container_categories {
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    opacity: 0.9;
+    background-color: #2e2c2c;
+    transform: none
+}
+
+.navbar_menu {
+    display: flex
+}
+
+.card_recomendation {
+    width: 307px;
+    height: 103px;
+}
+
+.icon_not_found,
+.text_not_found {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+}
+
+/*CELLPHONES*/
+@media (max-width: 599px) {
+    .footer_links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
